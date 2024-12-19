@@ -1,0 +1,7 @@
+datasets:
+  dataset_a:
+    path: "./datasets/dataset_a/"
+    class_mapping: ["background", "Iron", "Steel", "Copper", "Aluminum", "Oil Cans", "Plastic Bottle"]
+  dataset_b:
+    path: "./datasets/dataset_b/"
+    class_mapping: ["background", "Iron", "Steel", "Copper", "Aluminum", "Oil Cans", "Plastic Bottle"]

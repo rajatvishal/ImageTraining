@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Preporcess",
+            "consoleName": "Terminal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/datasets/preprocess.py",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: Data Loader",
+            "consoleName": "Terminal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/data_loader.py",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: Test",
+            "consoleName": "Terminal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/test.py",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: Train",
+            "consoleName": "Terminal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/train.py",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: Utils",
+            "consoleName": "Terminal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/utils.py",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: Validate",
+            "consoleName": "Terminal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/validate.py",
+            "python":"${command:python.interpreterPath}",
+            "justMyCode": true
+        },
+        
+    ]
+}

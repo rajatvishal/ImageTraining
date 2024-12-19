@@ -1,0 +1,10 @@
+train:
+  batch_size: 4
+  learning_rate: 0.001
+  num_epochs: 10
+  checkpoint_dir: "./results/checkpoints/"
+  save_every: 2  # Save checkpoints every 2 epochs
+
+dataset:
+  num_classes: 4  # Including background
+  transform: True

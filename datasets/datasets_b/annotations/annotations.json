@@ -1,0 +1,74 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "b0760d1b-9f33160d-aff2-4a0b-b9d4-372cbde24dd5.jpg",
+            "width": 1280,
+            "height": 1280
+        },
+        {
+            "id": 2,
+            "file_name": "images1.jpg",
+            "width": 1280,
+            "height": 1280
+        }
+    ],
+    "annotations": [
+        {
+            "id": 0,
+            "image_id": 1,
+            "bbox": [
+                50,
+                50,
+                200,
+                200
+            ],
+            "area": 40000,
+            "category_id": 2,
+            "iscrowd": 0
+        },
+        {
+            "id": 1,
+            "image_id": 2,
+            "bbox": [
+                50,
+                50,
+                200,
+                200
+            ],
+            "area": 40000,
+            "category_id": 2,
+            "iscrowd": 0
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "background"
+        },
+        {
+            "id": 2,
+            "name": "Iron"
+        },
+        {
+            "id": 3,
+            "name": "Steel"
+        },
+        {
+            "id": 4,
+            "name": "Copper"
+        },
+        {
+            "id": 5,
+            "name": "Aluminum"
+        },
+        {
+            "id": 6,
+            "name": "Oil Cans"
+        },
+        {
+            "id": 7,
+            "name": "Plastic Bottle"
+        }
+    ]
+}
