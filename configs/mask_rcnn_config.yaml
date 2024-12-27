@@ -1,0 +1,20 @@
+VERSION: 2  # Explicitly specify the config version for compatibility
+
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"  # Pre-trained weights
+  MASK_ON: True
+  DEVICE: "cpu"  # Set to "cpu" for CPU; use "cuda" for GPU
+
+SOLVER:
+  BASE_LR: 0.00025  # Base learning rate
+  MAX_ITER: 1000    # Maximum iterations for training
+  STEPS: [700]      # Step milestones for learning rate decay
+
+INPUT:
+  MIN_SIZE_TRAIN: [640, 672, 704, 736, 768, 800]  # Image sizes for multi-scale training
+
+DATASETS:
+  TRAIN: ["datasets_a", "datasets_b"]  # Registered dataset names for training
+  TEST: ["combined_validation"]       # Registered dataset name for testing
+
+OUTPUT_DIR: "./result"  # Directory to save outputs such as models and logs

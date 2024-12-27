@@ -1,0 +1,18 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "b0760d1b-9f33160d-aff2-4a0b-b9d4-372cbde24dd5.jpg",
+            "width": 1280,
+            "height": 1280
+        },
+        {
+            "id": 2,
+            "file_name": "11b56f69-e941d85b-77c4-4947-a705-efce1f27efc4.jpg",
+            "width": 1280,
+            "height": 1280
+        }
+    ],
+    "categories": [],
+    "annotations": []
+}

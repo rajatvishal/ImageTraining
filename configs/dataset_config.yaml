@@ -1,7 +1,28 @@
+VERSION: 2  # Explicitly specify the config version
+
+model:
+  weights: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"  # Pretrained weights
+  mask_on: True  # Enable Mask R-CNN
+  backbone: "build_resnet50_fpn_backbone"
+
+solver:
+  base_lr: 0.00025
+  max_iter: 5000
+  steps: (1000, 3000)
+  ims_per_batch: 4
+
 datasets:
   dataset_a:
     path: "./datasets/dataset_a/"
+    json_file: "./datasets/dataset_a/annotations/annotations.json"  # Ensure correct annotations path
     class_mapping: ["background", "Iron", "Steel", "Copper", "Aluminum", "Oil Cans", "Plastic Bottle"]
   dataset_b:
     path: "./datasets/dataset_b/"
+    json_file: "./datasets/dataset_b/annotations/annotations.json"  # Ensure correct annotations path
     class_mapping: ["background", "Iron", "Steel", "Copper", "Aluminum", "Oil Cans", "Plastic Bottle"]
+  combined_validation:
+    path: "./datasets/combined_validation/"
+    json_file: "./datasets/combined_validation/annotations/annotations.json"  # Ensure correct annotations path
+    class_mapping: ["background", "Iron", "Steel", "Copper", "Aluminum", "Oil Cans", "Plastic Bottle"]
+
+OUTPUT_DIR: "./output"
